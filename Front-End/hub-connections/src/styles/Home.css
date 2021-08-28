@@ -1,0 +1,15 @@
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col-6 {
+  width: 50%;
+  float: left;
+  padding: 15px;
+}
+
+section {
+  height: 300px;
+}
