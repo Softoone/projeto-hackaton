@@ -1,15 +1,47 @@
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.col-6 {
-  width: 50%;
-  float: left;
-  padding: 15px;
+nav {
+  height: 50px;
+  background-color: cadetblue;
 }
 
 section {
-  height: 300px;
+  width: 100%;
+  height: 500px;
+  background-color: bisque;
+}
+
+p {
+  text-align: left;
+  padding-top: 150px;
+}
+
+input {
+  display: block;
+  padding: 5px;
+  margin-left: 150px;
+  margin-top: 12px;
+}
+
+button {
+  display: block;
+  position: relative;
+  left: 150px;
+  top: 75px;
+  padding: 15px;
+  margin: 10px;
+}
+
+footer {
+  height: 100px;
+}
+
+#title-image {
+  position: relative;
+  bottom: 200px;
+  left: 1000px;
+  width: 30%;
+}
+
+#title-text {
+  text-align: center;
+  padding-top: 25px;
 }
