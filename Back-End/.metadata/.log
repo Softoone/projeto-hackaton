@@ -1895,3 +1895,910 @@ java.util.concurrent.TimeoutException
 
 !ENTRY Activator 1 0 2021-08-29 13:08:52.553
 !MESSAGE Has main method computation for project 'HubConections'
+!SESSION 2021-08-29 13:46:11.401 -----------------------------------------------
+eclipse.buildId=4.11.0.202106180608
+java.version=16.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.core.resources 4 567 2021-08-29 13:46:26.055
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2021-08-29 13:46:26.055
+!MESSAGE Could not read metadata for '.org.eclipse.egit.core.cmp'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/.org.eclipse.egit.core.cmp)[567]: java.lang.Exception: The project description file (.project) for '.org.eclipse.egit.core.cmp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1555)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2480)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2231)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:475)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:814)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:806)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:763)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1028)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:511)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:572)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:401)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:170)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:153)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2021-08-29 13:46:26.056
+!MESSAGE The project description file (.project) for '.org.eclipse.egit.core.cmp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for '.org.eclipse.egit.core.cmp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1555)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2480)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2231)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:475)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:814)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:806)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:763)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1028)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:511)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:572)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:401)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:170)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:153)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
+
+!ENTRY org.eclipse.jface 2 0 2021-08-29 13:46:29.243
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-29 13:46:29.243
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@301e5d23,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@393bcd6b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-29 13:46:34.943
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-29 13:46:34.944
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@55880c[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-29 13:46:34.967
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-29 13:46:35.268
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-08-29 13:46:38.390
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Caio Nunes'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY Activator 1 0 2021-08-29 13:46:43.089
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-29 13:46:46.102
+!MESSAGE Boot LS startup time from start to initialized: 11113ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-29 13:46:46.783
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.bGLOnbbQisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-29 13:46:46.788
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-29 13:46:46.791
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-29 13:46:46.794
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-29 13:46:46.798
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-29 13:46:46.798
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.bGLOnbbQ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-29 13:46:46.820
+!MESSAGE classpath=176 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-29 13:46:46.828
+!MESSAGE buffering callback sts4.classpath.bGLOnbbQ HubConections false 176
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-29 13:46:46.829
+!MESSAGE executing callback sts4.classpath.bGLOnbbQ 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-29 13:46:48.928
+!MESSAGE executing callback sts4.classpath.bGLOnbbQ SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2021-08-29 13:47:32.063
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.jface 2 0 2021-08-29 13:48:00.049
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-29 13:48:00.049
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@54d66499,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@502f9271,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.jface.text 4 0 2021-08-29 13:48:08.413
+!MESSAGE java.lang.NullPointerException: Cannot invoke "java.util.concurrent.CompletionStage.toCompletableFuture()" because the return value of "java.util.function.Function.apply(Object)" is null
+!STACK 0
+java.util.concurrent.CompletionException: java.lang.NullPointerException: Cannot invoke "java.util.concurrent.CompletionStage.toCompletableFuture()" because the return value of "java.util.function.Function.apply(Object)" is null
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1155)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:479)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:295)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.concurrent.CompletionStage.toCompletableFuture()" because the return value of "java.util.function.Function.apply(Object)" is null
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1146)
+	... 6 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-29 14:08:15.078
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.bGLOnbbQ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-29 14:08:15.078
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.bGLOnbbQ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-29 14:08:15.079
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-29 14:08:15.079
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.bGLOnbbQ => OK
+!SESSION 2021-08-31 22:21:22.079 -----------------------------------------------
+eclipse.buildId=4.11.0.202106180608
+java.version=16.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2021-08-31 22:21:41.847
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-31 22:21:41.848
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@20f6b6e0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@67cd84f9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-31 22:21:54.523
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-31 22:21:54.525
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@70234cf3[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-31 22:21:54.542
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-31 22:21:54.766
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY Activator 1 0 2021-08-31 22:21:56.398
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-08-31 22:21:56.683
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Caio Nunes'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-31 22:22:08.637
+!MESSAGE Boot LS startup time from start to initialized: 14079ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-31 22:22:08.916
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.OiocuriRisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-31 22:22:08.921
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-31 22:22:08.923
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-31 22:22:08.924
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-31 22:22:08.925
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.OiocuriR => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-31 22:22:08.927
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-31 22:22:09.051
+!MESSAGE classpath=176 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-31 22:22:09.070
+!MESSAGE buffering callback sts4.classpath.OiocuriR HubConections false 176
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-31 22:22:09.071
+!MESSAGE executing callback sts4.classpath.OiocuriR 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-31 22:22:10.003
+!MESSAGE executing callback sts4.classpath.OiocuriR SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-31 23:32:03.737
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.OiocuriR
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-31 23:32:03.739
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.OiocuriR
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-31 23:32:03.740
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-31 23:32:03.741
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.OiocuriR => OK
+
+!ENTRY org.eclipse.ui 2 2 2021-08-31 23:32:04.544
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2021-09-02 19:35:09.480 -----------------------------------------------
+eclipse.buildId=4.11.0.202106180608
+java.version=16.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2021-09-02 19:35:44.362
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-09-02 19:35:44.362
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3c9971af,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4abdd5e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 19:36:04.357
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 19:36:04.357
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@67a9f4ac[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 19:36:04.376
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 19:36:04.755
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY Activator 1 0 2021-09-02 19:36:07.015
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-09-02 19:36:07.138
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Caio Nunes'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-09-02 19:36:16.775
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 19:36:18.189
+!MESSAGE Boot LS startup time from start to initialized: 13786ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 19:36:18.349
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.YvQUIKBAisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 19:36:18.353
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 19:36:18.356
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 19:36:18.357
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 19:36:18.357
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 19:36:18.358
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.YvQUIKBA => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 19:36:18.416
+!MESSAGE classpath=176 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 19:36:18.420
+!MESSAGE buffering callback sts4.classpath.YvQUIKBA HubConections false 176
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 19:36:18.421
+!MESSAGE executing callback sts4.classpath.YvQUIKBA 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 19:36:18.821
+!MESSAGE executing callback sts4.classpath.YvQUIKBA SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2021-09-02 19:37:04.308
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY Activator 1 0 2021-09-02 19:37:29.475
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 19:37:29.989
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 19:37:30.365
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 19:37:30.639
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 19:37:34.724
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 19:37:41.284
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 19:37:41.437
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 19:37:41.947
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 19:47:46.739
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 19:47:46.906
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 19:47:47.503
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 19:47:49.486
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 19:47:49.625
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 19:47:50.109
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 19:48:07.330
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 19:48:07.965
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 19:48:08.074
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 19:48:28.083
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 19:48:28.222
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 19:48:28.736
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 19:48:43.468
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 19:48:43.596
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 19:48:44.088
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 19:50:22.104
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 19:50:22.238
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 19:50:22.721
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 19:53:46.412
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 19:53:46.552
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 19:53:47.024
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 19:54:38.746
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 19:54:38.927
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 19:54:39.350
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 19:55:16.764
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 19:55:16.905
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 19:55:17.356
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 19:56:19.737
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 19:56:19.865
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 19:56:20.360
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 19:57:21.939
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 19:57:22.072
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 19:57:22.555
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 19:58:08.939
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 19:58:09.071
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 19:58:09.554
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 19:58:38.407
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 19:58:38.541
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 19:58:39.048
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 19:59:22.228
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 19:59:22.413
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 19:59:22.819
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:02:37.574
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:02:37.704
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:02:38.187
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:02:44.111
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:02:44.391
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:02:44.728
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:08:29.193
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:08:29.327
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:08:29.824
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:08:34.293
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:08:35.160
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:08:35.185
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:10:35.441
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:10:35.573
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:10:36.042
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:10:50.940
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:10:51.102
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:10:51.534
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:12:47.198
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:12:47.326
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:12:47.833
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:25:34.482
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:25:34.614
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:25:35.160
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:25:37.077
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:25:37.207
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:25:37.690
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:26:12.139
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:26:12.276
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:26:12.725
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:27:37.684
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:27:37.815
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:27:38.304
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:29:13.314
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:29:13.445
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:29:13.913
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:31:59.403
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:31:59.536
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:31:59.999
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:32:53.812
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:32:53.939
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:32:54.395
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-09-02 20:33:00.761
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2092)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY Activator 1 0 2021-09-02 20:34:05.997
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:34:06.133
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:34:06.584
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:34:12.939
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:34:13.070
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:34:13.548
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:38:02.549
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:38:02.682
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:38:03.160
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:38:04.578
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:38:04.719
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:38:05.223
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:39:12.479
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:39:12.610
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:39:13.114
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:40:05.509
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:40:05.647
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:40:06.101
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:40:06.874
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:40:07.000
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:40:07.420
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:40:15.913
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:40:16.035
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:40:16.534
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY Activator 1 0 2021-09-02 20:41:41.157
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 20:41:41.286
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 20:41:41.772
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.ui 4 0 2021-09-02 22:11:50.709
+!MESSAGE Exception when processing proposal for: 
+!STACK 0
+java.lang.IllegalArgumentException: 
+	at org.eclipse.jdt.core.Signature.createCharArrayTypeSignature(Signature.java:1093)
+	at org.eclipse.jdt.core.Signature.createTypeSignature(Signature.java:1293)
+	at org.eclipse.jdt.internal.core.CompilationUnitStructureRequestor.convertTypeNamesToSigs(CompilationUnitStructureRequestor.java:293)
+	at org.eclipse.jdt.internal.codeassist.CompletionUnitStructureRequestor.createMethodHandle(CompletionUnitStructureRequestor.java:142)
+	at org.eclipse.jdt.internal.core.CompilationUnitStructureRequestor.enterMethod(CompilationUnitStructureRequestor.java:420)
+	at org.eclipse.jdt.internal.core.CompilationUnitStructureRequestor.enterConstructor(CompilationUnitStructureRequestor.java:346)
+	at org.eclipse.jdt.internal.compiler.SourceElementNotifier.notifySourceElementRequestor(SourceElementNotifier.java:331)
+	at org.eclipse.jdt.internal.codeassist.CompletionElementNotifier.notifySourceElementRequestor(CompletionElementNotifier.java:197)
+	at org.eclipse.jdt.internal.compiler.SourceElementNotifier.notifySourceElementRequestor(SourceElementNotifier.java:796)
+	at org.eclipse.jdt.internal.codeassist.CompletionElementNotifier.notifySourceElementRequestor(CompletionElementNotifier.java:226)
+	at org.eclipse.jdt.internal.compiler.SourceElementNotifier.notifySourceElementRequestor(SourceElementNotifier.java:480)
+	at org.eclipse.jdt.internal.codeassist.CompletionElementNotifier.notifySourceElementRequestor(CompletionElementNotifier.java:202)
+	at org.eclipse.jdt.internal.codeassist.InternalExtendedCompletionContext.computeEnclosingJavaElements(InternalExtendedCompletionContext.java:162)
+	at org.eclipse.jdt.internal.codeassist.InternalExtendedCompletionContext.getEnclosingElement(InternalExtendedCompletionContext.java:255)
+	at org.eclipse.jdt.internal.codeassist.InternalCompletionContext.getEnclosingElement(InternalCompletionContext.java:128)
+	at org.eclipse.jdt.ui.text.java.CompletionProposalCollector.acceptPotentialMethodDeclaration(CompletionProposalCollector.java:661)
+	at org.eclipse.jdt.ui.text.java.CompletionProposalCollector.accept(CompletionProposalCollector.java:287)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.proposeNewMethod(CompletionEngine.java:13715)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.completionOnFieldType(CompletionEngine.java:2694)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.complete(CompletionEngine.java:1974)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.complete(CompletionEngine.java:2303)
+	at org.eclipse.jdt.internal.core.Openable.codeComplete(Openable.java:136)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:367)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:357)
+	at org.eclipse.jdt.internal.ui.text.java.JavaCompletionProposalComputer.internalComputeCompletionProposals(JavaCompletionProposalComputer.java:256)
+	at org.eclipse.jdt.internal.ui.text.java.JavaCompletionProposalComputer.computeCompletionProposals(JavaCompletionProposalComputer.java:218)
+	at org.eclipse.jdt.internal.ui.text.java.JavaTypeCompletionProposalComputer.computeCompletionProposals(JavaTypeCompletionProposalComputer.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:348)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:340)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:289)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:352)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:351)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:295)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2021-09-02 22:12:11.434
+!MESSAGE Exception when processing proposal for: 
+!STACK 0
+java.lang.IllegalArgumentException: 
+	at org.eclipse.jdt.core.Signature.createCharArrayTypeSignature(Signature.java:1093)
+	at org.eclipse.jdt.core.Signature.createTypeSignature(Signature.java:1293)
+	at org.eclipse.jdt.internal.core.CompilationUnitStructureRequestor.convertTypeNamesToSigs(CompilationUnitStructureRequestor.java:293)
+	at org.eclipse.jdt.internal.codeassist.CompletionUnitStructureRequestor.createMethodHandle(CompletionUnitStructureRequestor.java:142)
+	at org.eclipse.jdt.internal.core.CompilationUnitStructureRequestor.enterMethod(CompilationUnitStructureRequestor.java:420)
+	at org.eclipse.jdt.internal.core.CompilationUnitStructureRequestor.enterConstructor(CompilationUnitStructureRequestor.java:346)
+	at org.eclipse.jdt.internal.compiler.SourceElementNotifier.notifySourceElementRequestor(SourceElementNotifier.java:331)
+	at org.eclipse.jdt.internal.codeassist.CompletionElementNotifier.notifySourceElementRequestor(CompletionElementNotifier.java:197)
+	at org.eclipse.jdt.internal.compiler.SourceElementNotifier.notifySourceElementRequestor(SourceElementNotifier.java:796)
+	at org.eclipse.jdt.internal.codeassist.CompletionElementNotifier.notifySourceElementRequestor(CompletionElementNotifier.java:226)
+	at org.eclipse.jdt.internal.compiler.SourceElementNotifier.notifySourceElementRequestor(SourceElementNotifier.java:480)
+	at org.eclipse.jdt.internal.codeassist.CompletionElementNotifier.notifySourceElementRequestor(CompletionElementNotifier.java:202)
+	at org.eclipse.jdt.internal.codeassist.InternalExtendedCompletionContext.computeEnclosingJavaElements(InternalExtendedCompletionContext.java:162)
+	at org.eclipse.jdt.internal.codeassist.InternalExtendedCompletionContext.getEnclosingElement(InternalExtendedCompletionContext.java:255)
+	at org.eclipse.jdt.internal.codeassist.InternalCompletionContext.getEnclosingElement(InternalCompletionContext.java:128)
+	at org.eclipse.jdt.ui.text.java.CompletionProposalCollector.acceptPotentialMethodDeclaration(CompletionProposalCollector.java:661)
+	at org.eclipse.jdt.ui.text.java.CompletionProposalCollector.accept(CompletionProposalCollector.java:287)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.proposeNewMethod(CompletionEngine.java:13715)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.completionOnFieldType(CompletionEngine.java:2694)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.complete(CompletionEngine.java:1974)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.complete(CompletionEngine.java:2303)
+	at org.eclipse.jdt.internal.core.Openable.codeComplete(Openable.java:136)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:367)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:357)
+	at org.eclipse.jdt.internal.ui.text.java.JavaCompletionProposalComputer.internalComputeCompletionProposals(JavaCompletionProposalComputer.java:256)
+	at org.eclipse.jdt.internal.ui.text.java.JavaCompletionProposalComputer.computeCompletionProposals(JavaCompletionProposalComputer.java:218)
+	at org.eclipse.jdt.internal.ui.text.java.JavaTypeCompletionProposalComputer.computeCompletionProposals(JavaTypeCompletionProposalComputer.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:348)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:340)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:289)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:352)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:351)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:295)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+
+!ENTRY Activator 1 0 2021-09-02 22:28:13.815
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.eclipse.jdt.apt.pluggable.core 1 1 2021-09-02 22:28:13.978
+!MESSAGE Hibernate JPA 2 Static-Metamodel Generator 5.5.4.Final
+
+!ENTRY Activator 1 0 2021-09-02 22:28:15.211
+!MESSAGE Has main method computation for project 'HubConections'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 22:30:45.363
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.YvQUIKBA
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 22:30:45.364
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.YvQUIKBA
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 22:30:45.365
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 22:30:45.366
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.YvQUIKBA => OK

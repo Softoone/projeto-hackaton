@@ -22,11 +22,15 @@ public class EmpresaService {
 		return listaRetorno;
 	}
 	
-	public void delete(Integer Cnpj) {
-		empresaRepository.deleteById(Cnpj);
+	public void delete(Integer cnpj) {
+		empresaRepository.deleteById(cnpj);
 	}
 	
 	public void save(Empresa empresa) {
+		empresaRepository.save(empresa);
+	}
+	
+	public void update(Empresa empresa) {
 		empresaRepository.save(empresa);
 	}
 }

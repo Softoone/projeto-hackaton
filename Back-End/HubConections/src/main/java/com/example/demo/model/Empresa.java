@@ -14,13 +14,16 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity(name="empresa")
-public class Empresa {
+public class Empresa extends Usuario {
 	
 	@Id
-	@Column(name="cnpj")
-	private Integer Cnpj;
+	@Column(name="cnpj_emp")
+	private Integer cnpjEmp;
 	
-	@Column(name="nome_empresa")
-	private String nomeEmpresa;
+	@Column(name="razao_social_emp")
+	private String razaoSocialEmp;
+	
+	Empresa empresa;
+			
 	
 }
