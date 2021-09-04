@@ -13,11 +13,17 @@ import {
   CardHeader,
 } from "reactstrap";
 import Header from "./Header";
+<<<<<<< HEAD
 import Footer from "./Footer";
 
 const Login = () => {
   return (
     <div>
+=======
+
+const Login = () => {
+  return (
+>>>>>>> 36758658ea4d2fa1985c85744cfd75d07e9580b4
     <Container>
       <Header></Header>
       <Row>
@@ -57,8 +63,11 @@ const Login = () => {
         <Col md="3"></Col>
       </Row>
     </Container>
+<<<<<<< HEAD
     <Footer></Footer>
     </div>
+=======
+>>>>>>> 36758658ea4d2fa1985c85744cfd75d07e9580b4
   );
 };
 
