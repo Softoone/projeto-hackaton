@@ -21,9 +21,6 @@ const Home = () => {
     <div>
       <Container>
         <Row>
-          <Navbar>
-            <NavbarBrand>Hub Connections</NavbarBrand>
-          </Navbar>
           <Col>
             <Card>
               <CardBody>

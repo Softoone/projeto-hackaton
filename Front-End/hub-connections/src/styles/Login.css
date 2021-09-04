@@ -1,0 +1,14 @@
+#loginCard {
+  margin: 30% 17%;
+  height: 50%;
+}
+
+#loginButton {
+  margin: 10%;
+  width: 80%;
+  border-radius: 100px;
+}
+
+#linkForgotPassword {
+  text-decoration: none;
+}
