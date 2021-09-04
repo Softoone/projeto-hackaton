@@ -2,6 +2,7 @@ package com.example.demo.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -14,6 +15,9 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity(name="usuario")
 public class Usuario {
+	
+	@Id
+	private Long id;
 	
 	@Column(name="email_usu")
 	private String emailUsu;
