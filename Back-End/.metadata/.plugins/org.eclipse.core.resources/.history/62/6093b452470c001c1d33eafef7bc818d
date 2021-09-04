@@ -1,0 +1,32 @@
+package com.example.demo.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity(name="usuario")
+public class Usuario {
+	
+	@Column(name="email_usu")
+	private String email;
+	
+	@Column(name="senha_usu")
+	private String senha;
+	
+	@Column(name="descricao_usu")
+	private String descricao;
+	
+	@Column(name ="telefone_usu")
+	private Integer telefone;
+	
+	@Column(name="nome")
+	private String nome;
+}

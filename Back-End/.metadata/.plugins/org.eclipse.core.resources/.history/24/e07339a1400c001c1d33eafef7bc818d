@@ -1,0 +1,26 @@
+package com.example.demo.model;
+
+import javax.persistence.Entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity(name="freelance")
+public class Freelance {
+
+	private Integer cpfFree;
+	
+	private String nomeFree;
+	
+	private String sobrenomeFree;
+	
+	private Integer telefoneFree;
+	
+	private Integer meiFree;
+}

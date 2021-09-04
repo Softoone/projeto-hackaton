@@ -1,0 +1,34 @@
+package com.example.demo.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity(name="empresa")
+public class Empresa extends Usuario {
+	
+	@Id
+	@Column(name="cnpj_emp")
+	private Integer cnpjEmp;
+	
+	@Column(name="nome_emp")
+	private String nomeEmp;
+	
+	@Column(name="razao_social_emp")
+	private String razaoSocialEmp;
+	
+	@Column(name="descricao_emp")
+	private String descricaoEmp;
+	
+	@Column(name ="telefone_emp")
+	private Integer telefoneEmp;
+}
