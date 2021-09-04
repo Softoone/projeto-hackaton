@@ -1,8 +1,9 @@
 import "./App.css";
 import Home from "./components/Home";
+import Login from "./components/Login";
 
 function App() {
-  return <Home></Home>;
+  return <Login></Login>;
 }
 
 export default App;
