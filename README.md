@@ -1,6 +1,10 @@
-# projeto-hackaton
+# projeto-hackhaton
 
 Projeto em desenvolvimento a ser apresentado ao Hub Salvador
 
-Match Work
 Hub Connections
+
+Lista de dependências utilizadas no projeto:
+
+- Bootstrap
+- ReactStrap
