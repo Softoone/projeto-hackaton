@@ -1,11 +1,9 @@
 import "./App.css";
+import Home from "./components/Home";
+import Login from "./components/Login";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Hub Connections</h1>
-    </div>
-  );
+  return <Login></Login>;
 }
 
 export default App;
