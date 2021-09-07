@@ -1,9 +1,10 @@
 import "./App.css";
-import Home from "./components/Home";
 import Login from "./components/Login";
+import Home from "./components/Home";
+import Feed from "./components/Feed";
 
 function App() {
-  return <Login></Login>;
+  return <Feed></Feed>;
 }
 
 export default App;
