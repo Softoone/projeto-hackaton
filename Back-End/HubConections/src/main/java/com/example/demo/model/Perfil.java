@@ -11,24 +11,22 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter
-@Setter
+
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name="usuario1")
-public class Usuario {
-	
-	@Id
+@Getter
+@Setter
+@Entity(name="perfil")
+public class Perfil {
+
+	@Id 
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="id_usuario")
-	private Integer idUsuario;
+	@Column(name="id_perfil")
+	private Integer idPerfil;
 	
-	@Column(name="login")
-	private String loginUsuario;
+	@Column(name="nome")
+	private String nomePerfil;
 	
-	@Column(name="senha")
-	private String senhaUsuario;
-	
+	@Column(name="descricao")
+	private String descricaoPerfil;
 }
-
-

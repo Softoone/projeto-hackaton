@@ -16,20 +16,21 @@ public class UsuarioService {
 	
 	public ArrayList<Usuario> findAll(){
 		ArrayList<Usuario> listaRetorno = new ArrayList<Usuario>();
-		
+			
 		listaRetorno = (ArrayList<Usuario>) usuarioRepository.findAll();
-		
+
 		return listaRetorno;
 	}
 	
-	public void delete(Integer cpf) {
-		usuarioRepository.deleteById(cpf);
+	public void delete(Integer cnpj) {
+		usuarioRepository.deleteById(cnpj);
 	}
+	
 	public void save(Usuario usuario) {
 		usuarioRepository.save(usuario);
 	}
+	
 	public void update(Usuario usuario) {
 		usuarioRepository.save(usuario);
 	}
-	
 }

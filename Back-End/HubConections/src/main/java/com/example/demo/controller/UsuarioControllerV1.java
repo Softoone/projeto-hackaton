@@ -17,9 +17,8 @@ import com.example.demo.model.Usuario;
 import com.example.demo.service.UsuarioService;
 
 @RestController
-@RequestMapping("/v1/usuarios")
+@RequestMapping
 public class UsuarioControllerV1 {
-
 	@Autowired
 	UsuarioService usuarioService;
 	
@@ -29,22 +28,19 @@ public class UsuarioControllerV1 {
 	}
 	
 	@GetMapping("/buscar")
-	public ArrayList<Usuario> findAllUsuarios(){
+	public ArrayList<Usuario> findAllEnterprise(){
 		return usuarioService.findAll();
 	}
 	
-	@DeleteMapping("/{cpf}")
-	public void deletar(@PathVariable Integer cpf) {
-		usuarioService.delete(cpf);
+	@DeleteMapping("/{Cnpj}")
+	public void deletar(@PathVariable Integer cnpj) {
+		usuarioService.delete(cnpj);
 	}
+	
 	@PutMapping("/editar")
 	public ResponseEntity atualizar(@RequestBody Usuario usuario) {
-			usuarioService.update(usuario);
-			return ResponseEntity.ok().build();
+		usuarioService.update(usuario);
+		return ResponseEntity.ok().build();
 	}
-	
-	
-	
-	
 	
 }
