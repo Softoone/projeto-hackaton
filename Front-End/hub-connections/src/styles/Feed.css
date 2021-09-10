@@ -1,8 +1,104 @@
-#feedBody {
-  padding: 10%;
-  padding-bottom: 60px; /* Height of the footer */
+/* Structure stylish */
+section {
+  max-width: 900px;
+  height: auto;
+  margin: 3% auto;
 }
 
-.container {
-  height: 100%;
+.row {
+  max-width: 900px;
+}
+
+/* Making posts stylish */
+
+#newPost {
+  width: 100%;
+  height: 250px;
+
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 2);
+}
+
+#userInfoPost {
+  margin-top: 10px;
+}
+
+#userInfoPost img {
+  padding-right: 10px;
+}
+
+#textPost {
+  background: #fbfbfb;
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 25px;
+  outline: none;
+  resize: none;
+  width: 100%;
+}
+
+#btnPost {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+
+#btnPost button {
+  padding: 10px 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #fff;
+  background: blue;
+}
+
+/* Posts list stylish */
+
+li {
+  list-style: none;
+}
+
+.posts li.post {
+  margin: 50px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.posts li.post #infoUserPost {
+  display: flex;
+  align-items: center;
+}
+
+.posts li.post strong {
+  color: blue;
+  font-size: 15px;
+}
+
+.posts li.post span {
+  color: lightgreen;
+  font-size: 12px;
+  display: block;
+}
+
+.posts li.post p {
+  width: 100%;
+  margin: 20px 0;
+}
+
+#postActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#postActions .actionButton {
+  height: 30px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  margin-right: 10px;
+  outline: none;
+  border: 0;
 }
