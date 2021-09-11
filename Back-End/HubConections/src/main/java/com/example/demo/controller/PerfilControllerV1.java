@@ -13,34 +13,35 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.model.Perfil;
 import com.example.demo.model.Usuario;
-import com.example.demo.service.UsuarioService;
+import com.example.demo.service.PerfilService;
 
 @RestController
-@RequestMapping
-public class UsuarioControllerV1 {
+@RequestMapping("/v1/perfil")
+public class PerfilControllerV1 {
+
 	@Autowired
-	UsuarioService usuarioService;
+	PerfilService perfService;
 	
 	@PostMapping("/adicionar")
-	public void adicionar(@RequestBody Usuario usuario) {
-		usuarioService.save(usuario);
+	public void adicionar(@RequestBody Perfil perfil) {
+		perfService.save(perfil);
 	}
 	
 	@GetMapping("/buscar")
-	public ArrayList<Usuario> findAllEnterprise(){
-		return usuarioService.findAll();
+	public ArrayList<Perfil> findAllEnterprise(){
+		return perfService.findAll();
 	}
 	
-	@DeleteMapping("/{idUsuario}")
-	public void deletar(@PathVariable Integer idUsuario) {
-		usuarioService.delete(idUsuario);
+	@DeleteMapping("/{idPerfil}")
+	public void deletar(@PathVariable Integer idPerfil) {
+		perfService.delete(idPerfil);
 	}
 	
 	@PutMapping("/editar")
-	public ResponseEntity atualizar(@RequestBody Usuario usuario) {
-		usuarioService.update(usuario);
+	public ResponseEntity atualizar(@RequestBody Perfil perfil) {
+		perfService.update(perfil);
 		return ResponseEntity.ok().build();
 	}
-	
 }
