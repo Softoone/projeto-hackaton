@@ -1,8 +1,7 @@
 package com.example.demo.model;
 
-
-
 import java.io.Serializable;
+import java.math.BigInteger;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -37,9 +36,6 @@ public class Usuario implements Serializable{
 	private String nomeUsuario;
 	
 	@Column(name="idade")
-	private String idadeUsuario;
-	
-	@Column(name="idade")
 	Date datNasc = new Date();
 
 	@Column(name="email")
@@ -49,13 +45,9 @@ public class Usuario implements Serializable{
 	private String senhaUsuario;
 	
 	@Column(name="tel")
-	private Integer telefoneUsuario;
+	private BigInteger telefoneUsuario;
 	
 	@Column(name="cep")
 	private Integer cepUsuario;
-	
-	
-	
+			
 }
-
-
