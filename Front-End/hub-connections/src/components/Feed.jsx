@@ -2,8 +2,31 @@ import Footer from "./Footer";
 import Header from "./Header";
 import "../styles/Feed.css";
 import { Button, Container, Form, Row, Col } from "reactstrap";
+import favorite from "../assets/star_outline_black_24dp.svg"
+import favoriteFilled from "../assets/star_black_24dp.svg"
+import comment from "../assets/insert_comment_black_24dp.svg"
+import share from "../assets/share_black_24dp.svg"
+import { useEffect, useState } from "react";
 
 const Feed = () => {
+
+  const [favoriteToggle,setFavoriteToggle] = useState(false)
+
+  
+  function favoriteOnOff() {
+    !favoriteToggle ? setFavoriteToggle(true) : setFavoriteToggle(false)
+    favoritePost()
+  }
+
+  const favoritePost = () => {
+    if (favoriteToggle == false) {
+      return favoriteFilled
+    }else{
+      return favorite
+    }
+  }
+
+
   return (
     <div className="postsFeed">
       <Header></Header>
@@ -57,17 +80,15 @@ const Feed = () => {
                     </p>
                   </Col>
                   <div id="postActions">
-                    <Button className="actionButton">
-                      <img src="curtir.png" /*alt="Like/Fav"*/ />
-                      Like/Fav
+                    <Button className="actionButton" 
+                   /* onClick={favoriteOnOff()*/>
+                      <img src={favorite} /*alt="Like/Fav"*/ />
                     </Button>
                     <Button className="actionButton">
-                      <img src="compartilhar.png" /* alt="Share" */ />
-                      Share
+                      <img src={share} /* alt="Share" */ />
                     </Button>
                     <Button className="actionButton">
-                      <img src="comentar.png" /* alt="Comment" */ />
-                      Comment
+                      <img src={comment} /* alt="Comment" */ />
                     </Button>
                   </div>
                 </li>
@@ -87,16 +108,13 @@ const Feed = () => {
                   </Col>
                   <div id="postActions">
                     <Button className="actionButton">
-                      <img src="curtir.png" /*alt="Like/Fav"*/ />
-                      Like/Fav
+                      <img src={favorite} /*alt="Like/Fav"*/ />
                     </Button>
                     <Button className="actionButton">
-                      <img src="compartilhar.png" /* alt="Share" */ />
-                      Share
+                      <img src={share} /* alt="Share" */ />
                     </Button>
                     <Button className="actionButton">
-                      <img src="comentar.png" /* alt="Comment" */ />
-                      Comment
+                      <img src={comment} /* alt="Comment" */ />
                     </Button>
                   </div>
                 </li>
@@ -116,16 +134,13 @@ const Feed = () => {
                   </Col>
                   <div id="postActions">
                     <Button className="actionButton">
-                      <img src="curtir.png" /*alt="Like/Fav"*/ />
-                      Like/Fav
+                      <img src={favorite} /*alt="Like/Fav"*/ />
                     </Button>
                     <Button className="actionButton">
-                      <img src="compartilhar.png" /* alt="Share" */ />
-                      Share
+                      <img src={share} /* alt="Share" */ />
                     </Button>
                     <Button className="actionButton">
-                      <img src="comentar.png" /* alt="Comment" */ />
-                      Comment
+                      <img src={comment} /* alt="Comment" */ />
                     </Button>
                   </div>
                 </li>

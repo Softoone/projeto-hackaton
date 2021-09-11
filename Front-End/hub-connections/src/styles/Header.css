@@ -2,11 +2,11 @@
   height: 75px;
   padding: 0 15px;
   width: 100%;
-  background: #6cf;
+  background: #fbfbfb;
 }
 
 #logoHeader {
-  width: 100px;
+  width: 80px;
   height: 100%;
 }
 
@@ -33,6 +33,6 @@ div.searchBar {
 }
 
 #dropdownIcon {
-  background: #6cf;
+  background: none;
   border: none;
 }

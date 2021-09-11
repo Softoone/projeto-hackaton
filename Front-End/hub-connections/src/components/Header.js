@@ -8,7 +8,7 @@ import {
   Navbar,
 } from "reactstrap";
 import { useState } from "react";
-import logo from "../assets/logo_HubConnections.jfif";
+import logo from "../assets/logoHC_edited.png";
 import "../styles/Header.css";
 import iconUser from "../assets/account_circle_black_24dp.svg";
 import searchIcon from "../assets/search_black_24dp.svg";
