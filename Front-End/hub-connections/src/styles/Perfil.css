@@ -1,0 +1,11 @@
+.portfolio{
+    border: 2px;
+}
+
+.fileUpload {
+    display: inline-block;
+    background: #fbfbfb;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 2);
+    width: 75px;
+    height: 100px;
+}
