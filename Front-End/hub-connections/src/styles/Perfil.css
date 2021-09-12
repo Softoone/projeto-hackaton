@@ -1,11 +1,28 @@
-.portfolio{
-    border: 2px;
+/* Page Structure */
+section {
+  margin-top: 150px;
+}
+
+/* Card Profile */
+
+/* Profile Portfolio */
+.portfolio {
+  border: solid 2px;
+  height: 250px;
+}
+
+.userInfoCard {
+  border: solid 2px;
+  height: 250px;
 }
 
 .fileUpload {
-    display: inline-block;
-    background: #fbfbfb;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 2);
-    width: 75px;
-    height: 100px;
+  display: inline-block;
+  background: #fbfbfb;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 2);
+  width: 150px;
+  height: 100px;
+  margin: 10px;
 }
+
+/* Highlight Posts */
