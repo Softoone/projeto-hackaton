@@ -1,28 +1,89 @@
 /* Page Structure */
 section {
-  margin-top: 150px;
+  margin-top: 20px;
 }
 
 /* Card Profile */
+.userInfoCard {
+  border: solid 2px;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+#banner {
+  border: solid 2px;
+  height: 120px;
+  width: 100%;
+  background: rgb(161, 175, 147);
+}
+
+div.photoDescription img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 10;
+  top: -50px;
+  left: 50px;
+}
+
+.description {
+  border: solid 2px;
+  width: 80%;
+  height: auto;
+  max-height: 150px;
+  position: relative;
+  float: right;
+  margin: 20px;
+}
 
 /* Profile Portfolio */
 .portfolio {
   border: solid 2px;
-  height: 250px;
+  height: 300px;
 }
 
-.userInfoCard {
-  border: solid 2px;
-  height: 250px;
+.portfolioTitle h2 {
+  margin: 10px 20px;
+}
+
+.portfolioFiles {
+  height: 290px;
+  max-height: 220px;
+  width: 100%;
+  padding: 30px 25px;
+
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: 150px;
+  grid-auto-rows: 150px;
+  gap: 20px;
 }
 
 .fileUpload {
-  display: inline-block;
-  background: #fbfbfb;
+  background: #be9595;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 2);
-  width: 150px;
-  height: 100px;
-  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#addFiles {
+  border: none;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fileUpload img {
 }
 
 /* Highlight Posts */
+
+.featuredPosts {
+  border: solid 2px;
+  height: 300px;
+  margin-bottom: 30px;
+}

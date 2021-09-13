@@ -1,7 +1,7 @@
 import "./App.css";
 import Home from "./components/Home";
 import Login from "./components/Login";
-import Perfil from "./components/Perfil"
+import Perfil from "./components/Perfil";
 
 function App() {
   return <Perfil></Perfil>;
