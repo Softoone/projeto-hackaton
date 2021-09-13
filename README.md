@@ -8,3 +8,4 @@ Lista de dependências utilizadas no projeto:
 
 - Bootstrap
 - ReactStrap
+- React Hook Form
