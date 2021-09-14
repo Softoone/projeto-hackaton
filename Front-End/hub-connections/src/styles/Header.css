@@ -1,3 +1,38 @@
 #navHeader {
-    height: 50px;
+  height: 75px;
+  padding: 0 15px;
+  width: 100%;
+  background: #fbfbfb;
+}
+
+#logoHeader {
+  width: 80px;
+  height: 100%;
+}
+
+div.searchBar {
+  display: flex;
+  justify-content: center;
+}
+
+#searchInput {
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+#searchButton {
+  background: #6cf;
+  border: none;
+}
+
+#iconUser {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+
+#dropdownIcon {
+  background: none;
+  border: none;
 }

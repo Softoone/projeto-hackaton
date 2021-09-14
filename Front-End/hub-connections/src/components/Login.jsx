@@ -17,7 +17,6 @@ import Footer from "./Footer";
 
 const Login = () => {
   return (
-    <div>
     <Container>
       <Header></Header>
       <Row>
@@ -56,9 +55,8 @@ const Login = () => {
         </Col>
         <Col md="3"></Col>
       </Row>
+      <Footer></Footer>
     </Container>
-    <Footer></Footer>
-    </div>
   );
 };
 
