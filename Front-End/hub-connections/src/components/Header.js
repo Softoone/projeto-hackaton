@@ -19,8 +19,11 @@ const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [profiles, setProfiles] = useState([]);
   const [searchProfiles, setSearchProfiles] = useState("");
+  const [modal, setModal] = useState(false);
 
-  const toggle = () => {
+  const modalToggle = () => setModal(!modal);
+
+  const dropDownToggle = () => {
     setDropdownOpen((prevState) => !prevState);
   };
 
@@ -29,8 +32,7 @@ const Header = () => {
       console.log(res);
       setProfiles(res.data);
     });
-
-    return <ProfileSearchView></ProfileSearchView>;
+    setModal(true);
   };
 
   const searchForConnections = () => {};
@@ -49,9 +51,16 @@ const Header = () => {
         <Button id="searchButton" onClick={getConnectionsByName}>
           <img id="searchIcon" src={searchIcon} alt="Search icon" />
         </Button>
+        {modal ? (
+          <ProfileSearchView isOpen={modal} toggle={modalToggle} />
+        ) : null}
       </div>
       <div className="dropdownFunction">
-        <Dropdown direction="left" isOpen={dropdownOpen} toggle={toggle}>
+        <Dropdown
+          direction="left"
+          isOpen={dropdownOpen}
+          toggle={dropDownToggle}
+        >
           <DropdownToggle id="dropdownIcon">
             <img id="iconUser" src={iconUser} alt="User account icon" />
           </DropdownToggle>

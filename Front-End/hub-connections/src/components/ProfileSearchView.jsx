@@ -10,8 +10,7 @@ import {
 } from "reactstrap";
 import { getProfiles } from "../services/apiService";
 
-const ProfileSearchView = ({ nickname }) => {
-  const [modal, setModal] = useState(false);
+const ProfileSearchView = (props) => {
   const [profileNickname, setNickname] = useState([]);
 
   useEffect(() => {
@@ -25,15 +24,10 @@ const ProfileSearchView = ({ nickname }) => {
     });
   };
 
-  const toggle = () => setModal(!modal);
-
   return (
     <div>
-      <Button color="danger" onClick={toggle}>
-        Abrir modal
-      </Button>
-      <Modal isOpen={modal} toggle={toggle}>
-        <ModalHeader toggle={toggle}>Find new connections</ModalHeader>
+      <Modal isOpen={props.isOpen} toggle={props.toggle}>
+        <ModalHeader toggle={props.toggle}>Find new connections</ModalHeader>
         <ModalBody>
           <Table id="TableProfiles" borderless={true}>
             <tbody>
@@ -50,10 +44,10 @@ const ProfileSearchView = ({ nickname }) => {
           </Table>
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={toggle}>
+          <Button color="primary" onClick={props.toggle}>
             Do Something
           </Button>
-          <Button color="secondary" onClick={toggle}>
+          <Button color="secondary" onClick={props.toggle}>
             Cancel
           </Button>
         </ModalFooter>
