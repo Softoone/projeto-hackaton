@@ -33,7 +33,10 @@ public class UsuarioService {
 	}
 	
 	public void update(Usuario usuario) {
-		usuarioRepository.save(usuario);
+		Usuario usuarioBanco = usuarioRepository.findById(usuario.getId());
+		if(usuarioBanco != null){
+			usuarioRepository.save(usuario);
+		}
 	}
 	
 	public Usuario buscarUsuarioId(Integer idUsuario) {
