@@ -31,7 +31,10 @@ public class ComentarioService {
 	}
 	
 	public void update(Comentario comentario) {
-		comentarioRepository.save(comentario);
+		Comentario comentarioBanco = comentarioRepository.findById(comentario.getId());
+		if(comentarioBanco != null){
+			comentarioRepository.save(comentario);
+		}
 	}
 	
 }
