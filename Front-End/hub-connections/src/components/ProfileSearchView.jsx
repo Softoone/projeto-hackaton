@@ -12,7 +12,7 @@ import { getProfiles } from "../services/apiService";
 
 const ProfileSearchView = ({ nickname }) => {
   const [modal, setModal] = useState(false);
-  const [profileNickname, setNickname] = useState(["Roberto", "Manoel"]);
+  const [profileNickname, setNickname] = useState([]);
 
   useEffect(() => {
     getAllProfiles();
@@ -40,7 +40,7 @@ const ProfileSearchView = ({ nickname }) => {
               {profileNickname &&
                 profileNickname.map((name, index) => (
                   <tr>
-                    <th scope="row">{name}</th>
+                    <th scope="row">{name.apelidoPerfil}</th>
                     <td>
                       <Button onClick="">Connect</Button>
                     </td>
