@@ -3,6 +3,10 @@ section {
   margin-top: 20px;
 }
 
+.backgroundPerfil {
+  background: #abb2eb;
+}
+
 /* Card Profile */
 
 .userInfoCard {
@@ -11,6 +15,7 @@ section {
   align-items: center;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 2);
   justify-content: center;
+  background: #f1ebebd8;
 }
 
 #banner {
@@ -32,12 +37,20 @@ div.photoDescription img {
 }
 
 .description {
-  /* border: solid 2px; */
   width: 90%;
-  height: 90px;
-  max-height: 100px;
+  height: auto;
+  position: relative;
+  left: 50px;
+  top: 50px;
+}
+
+.description1 {
+  width: 90%;
+  height: auto;
   position: relative;
   float: right;
+  left: 150px;
+  margin-bottom: 25px;
 }
 
 /* Profile Portfolio */
@@ -55,21 +68,21 @@ div.photoDescription img {
   max-height: 220px;
   /* width: 100%; */
   padding: 30px 0px;
-
-  display: grid;
-  grid-template-columns: 250px 250px 250px 250px;
-  grid-template-rows: 150px;
-  grid-auto-rows: 150px;
-  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fileUpload {
-  background: #be9595;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 2);
   display: flex;
   align-items: center;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 2);
   justify-content: center;
+}
+
+.addImageIcon {
+  background: #fff;
 }
 
 #addFiles {
@@ -87,4 +100,5 @@ div.photoDescription img {
 
   height: 300px;
   margin-bottom: 30px;
+  background: #f1ebebd8;
 }

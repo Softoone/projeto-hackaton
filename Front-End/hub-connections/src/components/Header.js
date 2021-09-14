@@ -75,6 +75,13 @@ const Header = () => {
                 </Link>
               </div>
             </DropdownItem>
+            {/* <DropdownItem>
+              <div className="fillLink">
+                <Link to="/feed" id="linkDropFeed">
+                  Feed
+                </Link>
+              </div>
+            </DropdownItem> */}
 
             <DropdownItem>Theme</DropdownItem>
             <DropdownItem divider />
