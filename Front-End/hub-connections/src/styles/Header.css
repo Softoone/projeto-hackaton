@@ -2,7 +2,7 @@
   height: 75px;
   padding: 0 15px;
   width: 100%;
-  background: #fbfbfb;
+  background: #e5c0c0;
 }
 
 #logoHeader {
@@ -22,7 +22,7 @@ div.searchBar {
 }
 
 #searchButton {
-  background: #6cf;
+  background: none;
   border: none;
 }
 
