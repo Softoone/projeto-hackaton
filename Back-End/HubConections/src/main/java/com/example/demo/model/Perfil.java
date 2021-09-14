@@ -38,5 +38,5 @@ public class Perfil implements Serializable{
 	
 	@OneToOne
 	@JoinColumn(name = "id_usuario")
-	private Integer idUsuarioPerfil;
+	private Usuario usuario;
 }
