@@ -1,15 +1,11 @@
 import http from "./http-common";
 
 export const getUsers = () => {
-  return http?.get(`/usuario/`);
+  return http?.get(`/v1/usuario`);
 };
 
 export const getUserById = (userId) => {
-  return http?.get(`/usuario/${userId}`);
-};
-
-export const getUserByUsersName = (username) => {
-  return http?.get(`/usuario?username=${username}`);
+  return http?.get(`/v1/usuario/${userId}`);
 };
 
 export const deleteUser = (userId) => {
@@ -18,4 +14,14 @@ export const deleteUser = (userId) => {
 
 export const updateUserData = (userId, userData) => {
   return http?.put(`/usuario/${userId}`, userData);
+};
+
+export const getUserByUsersName = (username) => {
+  return http?.get(`/usuario?username=${username}`);
+};
+
+export const filter = (id) => {
+  if (name === "") return Users;
+  var filtrado = Users.filter((obj) => obj.name.includes(name));
+  return filtrado;
 };
