@@ -33,6 +33,9 @@ public class PerfilService {
 	}
 	
 	public void update(Perfil perfil) {
-		perfRepository.save(perfil);
+		Perfil perfilBanco = perfRepository.findById(perfil.getId());
+		if(perfilBanco != null){
+			perfRepository.save(perfil);
+		}
 	}
 }
