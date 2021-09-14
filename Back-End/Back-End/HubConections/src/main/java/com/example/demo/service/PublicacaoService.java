@@ -34,7 +34,10 @@ public class PublicacaoService {
 	}
 	
 	public void update(Publicacao publicacao) {
-		publiRepository.save(publicacao);
+		Publicacao publicacaoBanco = publiRepository.findById(publicacao.getId());
+		if(publicacaoBanco != null){
+			publiRepository.save(publicacao);
+		}
 	}
 	
 	public void salvarPublicacao(MultipartFile file) {
