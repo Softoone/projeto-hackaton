@@ -40,6 +40,17 @@ div.photoDescription img {
   float: right;
 }
 
+
+.description1 {
+  /* border: solid 2px; */
+  width: 90%;
+  height: 90px;
+  left: 25%;
+  max-height: 100px;
+  position: relative;
+  float: right;
+}
+
 /* Profile Portfolio */
 .portfolio {
   border: solid 2px;

@@ -43,6 +43,7 @@ const Header = () => {
       <Link id="linkLogo" to="/feed">
         <img id="logoHeader" src={logo} alt="Hub Connection Logo" />
       </Link>
+      
       {/* <DropdownItem header>   <div>
       <Breadcrumb tag="nav" listTag="div">
         <BreadcrumbItem tag="a" href="#">Home</BreadcrumbItem>
@@ -82,6 +83,13 @@ const Header = () => {
                 </Link>
               </div>
             </DropdownItem>
+            {/* <DropdownItem>
+              <div className="fillLink">
+                <Link to="/feed" id="linkDropFeed">
+                  Feed
+                </Link>
+              </div>
+            </DropdownItem> */}
 
             <DropdownItem>Theme</DropdownItem>
             <DropdownItem divider />
