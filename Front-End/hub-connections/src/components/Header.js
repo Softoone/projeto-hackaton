@@ -40,16 +40,9 @@ const Header = () => {
 
   return (
     <Navbar id="navHeader">
-      <Link id="linkLogo" to="/feed">
+      <Link id="linkLogo" to="/">
         <img id="logoHeader" src={logo} alt="Hub Connection Logo" />
       </Link>
-      {/* <DropdownItem header>   <div>
-      <Breadcrumb tag="nav" listTag="div">
-        <BreadcrumbItem tag="a" href="#">Home</BreadcrumbItem>
-        <BreadcrumbItem tag="a" href="Perfil">Perfil</BreadcrumbItem>
-      </Breadcrumb>
-    </div>
-   </DropdownItem> */}
       <div className="searchBar">
         <Input
           id="searchInput"

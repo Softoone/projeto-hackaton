@@ -10,3 +10,4 @@ Lista de dependências utilizadas no projeto:
 - ReactStrap
 - React Hook Form
 - Axios
+- React Router Dom
