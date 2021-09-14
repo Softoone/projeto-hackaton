@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.model.Publicacao;
 import com.example.demo.service.PublicacaoService;
@@ -42,5 +44,12 @@ public class PublicacaoControllerV1 {
 	public ResponseEntity atualizar(@RequestBody Publicacao publicacao) {
 		publiService.update(publicacao);
 		return ResponseEntity.ok().build();
+	}
+	
+	@PostMapping("/save")
+	public void savePublicacao(
+			@RequestParam("foto") MultipartFile foto) {
+		
+		publiService.salvarPublicacao(foto);
 	}
 }

@@ -6,9 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.model.Perfil;
-import com.example.demo.model.Usuario;
 import com.example.demo.repository.PerfilRepository;
-import com.example.demo.repository.UsuarioRepository;
 
 @Service
 public class PerfilService {
@@ -35,4 +33,10 @@ public class PerfilService {
 	public void update(Perfil perfil) {
 		perfRepository.save(perfil);
 	}
+	
+	public ArrayList<Perfil> buscarPorNome(String apelidoPerfil) {
+		
+		return (ArrayList<Perfil>) perfRepository.buscarPorNome(apelidoPerfil);
+	}
+	
 }

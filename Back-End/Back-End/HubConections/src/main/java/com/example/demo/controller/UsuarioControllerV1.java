@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.model.Usuario;
 import com.example.demo.service.UsuarioService;
@@ -55,6 +57,13 @@ public class UsuarioControllerV1 {
 	public ResponseEntity atualizar(@RequestBody Usuario usuario) {
 		usuarioService.update(usuario);
 		return ResponseEntity.ok().build();
+	}
+	
+	@PostMapping("/save")
+	public void saveUsuario(
+			@RequestParam("foto") MultipartFile foto) {
+		
+		usuarioService.salvarUsuario(foto);
 	}
 	
 }

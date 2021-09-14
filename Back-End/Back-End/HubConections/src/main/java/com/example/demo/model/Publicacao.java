@@ -43,7 +43,7 @@ public class Publicacao {
 	
 	@Column(name="img")
 	@Lob
-	private Byte[] img_publicacao;
+	private Byte[] foto;
 	
 	@OneToMany(mappedBy ="publi")
 	private List<Comentario> comentarios = new ArrayList<>();

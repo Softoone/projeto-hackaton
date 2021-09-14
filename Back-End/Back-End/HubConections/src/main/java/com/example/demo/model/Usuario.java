@@ -12,6 +12,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.Lob;
 import javax.persistence.OneToOne;
 
 import lombok.AllArgsConstructor;
@@ -53,6 +54,10 @@ public class Usuario implements Serializable{
 	
 	@Column(name="cep")
 	private Integer cepUsuario;
+	
+	@Column(name="img")
+	@Lob
+	private Byte[] foto;
 	
 	@OneToOne
 	@JoinColumn(name = "id_usuario")
