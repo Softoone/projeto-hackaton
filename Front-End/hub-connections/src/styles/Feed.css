@@ -17,11 +17,11 @@ section {
 
 #newPost {
   width: 100%;
-  height: 250px;
+  height: 240px;
 
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 2);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 2);
 }
 
 #userInfoPost {
@@ -49,9 +49,9 @@ section {
 }
 
 #btnPost button {
-  padding: 10px 50px;
+  padding: 8px 40px;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 100px;
   color: #fff;
   background: blue;
 }
@@ -105,7 +105,7 @@ li {
 #postActions .actionButton {
   height: 30px;
   padding: 5px 20px;
-  border-radius: 10px;
+  border-radius: 100px;
   margin-right: 10px;
   outline: none;
   border: 0;

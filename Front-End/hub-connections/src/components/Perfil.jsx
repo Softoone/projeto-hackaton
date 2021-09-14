@@ -23,7 +23,7 @@ const Perfil = () => {
               <div id="banner">Banner</div>
               <div className="photoDescription">
                 <img src={photo} alt="Icone de Perfil do Usuário" />
-                <div className="description">
+                <div className="description" type="description">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Sapiente expedita dicta nostrum. Ipsam provident porro tempore
                   minima, minus rem autem neque, id tempora sequi in sint

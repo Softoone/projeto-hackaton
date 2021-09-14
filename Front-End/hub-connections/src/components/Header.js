@@ -10,33 +10,47 @@ import {
 import { useState } from "react";
 import logo from "../assets/logoHC_edited.png";
 import "../styles/Header.css";
-import iconUser from "../assets/account_circle_black_24dp.svg";
-import searchIcon from "../assets/search_black_24dp.svg";
-import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import iconUser from "../assets/account_circle_white_24dp.svg";
+import searchIcon from "../assets/search_white_24dp.svg";
+import { getUserById } from "../services/apiService";
 
 const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [profiles, setProfiles] = useState([]);
+  const [searchProfiles, setSearchProfiles] = useState("");
 
   const toggle = () => {
     setDropdownOpen((prevState) => !prevState);
   };
 
+  const getConnectionsByName = () => {
+    getUserById("1").then((res) => {
+      console.log(res);
+      setProfiles(res.data);
+    });
+  };
+
+  const searchForConnections = () => {};
+
   return (
     <Navbar id="navHeader">
       <img id="logoHeader" src={logo} alt="Hub Connection Logo" />
-      <DropdownItem header>   <div>
+      {/* <DropdownItem header>   <div>
       <Breadcrumb tag="nav" listTag="div">
         <BreadcrumbItem tag="a" href="#">Home</BreadcrumbItem>
         <BreadcrumbItem tag="a" href="Perfil">Perfil</BreadcrumbItem>
       </Breadcrumb>
     </div>
-   </DropdownItem>
+   </DropdownItem> */}
       <div className="searchBar">
         <Input
           id="searchInput"
+          type="text"
           placeholder="Looking for new connections?"
-        ></Input>
-        <Button id="searchButton">
+          defaultValue={searchProfiles}
+          onChange={searchForConnections}
+        />
+        <Button id="searchButton" onClick={getConnectionsByName}>
           <img id="searchIcon" src={searchIcon} alt="Search icon" />
         </Button>
       </div>

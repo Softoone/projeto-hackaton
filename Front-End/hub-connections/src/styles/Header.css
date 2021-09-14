@@ -1,12 +1,12 @@
 #navHeader {
-  height: 75px;
+  height: 100px;
   padding: 0 15px;
   width: 100%;
-  background: #e5c0c0;
+  background: #202020;
 }
 
 #logoHeader {
-  width: 80px;
+  width: 150px;
   height: 100%;
 }
 

@@ -23,7 +23,7 @@ const Feed = () => {
               <strong>User Name</strong>
             </Col>
             <Col id="createPost" md="12">
-              <Form action="" className="formPost" id="formPost">
+              <Form onSubmit="" className="formPost" id="formPost">
                 <textarea
                   name="textPost"
                   placeholder="Ready to make connections?"
