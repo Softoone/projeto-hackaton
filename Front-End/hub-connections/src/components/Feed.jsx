@@ -2,13 +2,36 @@ import Footer from "./Footer";
 import Header from "./Header";
 import "../styles/Feed.css";
 import { Button, Container, Form, Row, Col } from "reactstrap";
-import favorite from "../assets/star_outline_black_24dp.svg";
-import favoriteFilled from "../assets/star_black_24dp.svg";
+import starEmpty from "../assets/star_outline_black_24dp.svg";
+import starFilled from "../assets/star_black_24dp.svg";
 import comment from "../assets/insert_comment_black_24dp.svg";
 import share from "../assets/share_black_24dp.svg";
 import { useEffect, useState } from "react";
 
 const Feed = () => {
+  const [starUp, setStarUp] = useState(false);
+
+  useEffect(() => {
+    handleStarPost();
+  }, [starUp]);
+
+  const starPost = () => {
+    console.log(starUp);
+    if (starUp == false) {
+      setStarUp(true);
+    } else {
+      setStarUp(false);
+    }
+  };
+
+  const handleStarPost = () => {
+    if (!starUp) {
+      return starEmpty;
+    } else {
+      return starFilled;
+    }
+  };
+
   return (
     <div className="postsFeed">
       <Header></Header>
@@ -19,7 +42,11 @@ const Feed = () => {
         <Container fluid={true}>
           <Row id="newPost">
             <Col md="12" id="userInfoPost">
-              <img src="pessoa.jpg" alt="Profile Icon" />
+              <img
+                className="userProfilePic"
+                src="pessoa.jpg"
+                alt="Profile Icon"
+              />
               <strong>User Name</strong>
             </Col>
             <Col id="createPost" md="12">
@@ -50,7 +77,11 @@ const Feed = () => {
               <ul className="posts" id="posts">
                 <li className="post">
                   <Col md="12" id="userInfoPost">
-                    <img src="pessoa.jpg" alt="Profile Icon" />
+                    <img
+                      className="userProfilePic"
+                      src="pessoa.jpg"
+                      alt="Profile Icon"
+                    />
                     <strong>User Name</strong>
                     <span>Datetime</span>
                     <p>
@@ -62,24 +93,25 @@ const Feed = () => {
                     </p>
                   </Col>
                   <div id="postActions">
-                    <Button
-                      className="actionButton"
-                      /* onClick={favoriteOnOff()*/
-                    >
-                      <img src={favorite} /*alt="Like/Fav"*/ />
+                    <Button className="actionButton">
+                      <img src={starEmpty} alt="Like/Fav" />
                     </Button>
                     <Button className="actionButton">
-                      <img src={share} /* alt="Share" */ />
+                      <img src={share} alt="Share" />
                     </Button>
                     <Button className="actionButton">
-                      <img src={comment} /* alt="Comment" */ />
+                      <img src={comment} alt="Comment" />
                     </Button>
                   </div>
                 </li>
 
                 <li className="post">
                   <Col md="12" id="userInfoPost">
-                    <img src="pessoa.jpg" alt="Profile Icon" />
+                    <img
+                      className="userProfilePic"
+                      src="pessoa.jpg"
+                      alt="Profile Icon"
+                    />
                     <strong>User Name</strong>
                     <span>Datetime</span>
                     <p>
@@ -91,21 +123,25 @@ const Feed = () => {
                     </p>
                   </Col>
                   <div id="postActions">
-                    <Button className="actionButton">
-                      <img src={favorite} /*alt="Like/Fav"*/ />
+                    <Button className="actionButton" onClick={starPost}>
+                      <img src={handleStarPost()} alt="Like/Fav" />
                     </Button>
                     <Button className="actionButton">
-                      <img src={share} /* alt="Share" */ />
+                      <img src={share} alt="Share" />
                     </Button>
                     <Button className="actionButton">
-                      <img src={comment} /* alt="Comment" */ />
+                      <img src={comment} alt="Comment" />
                     </Button>
                   </div>
                 </li>
 
                 <li className="post">
                   <Col md="12" id="userInfoPost">
-                    <img src="pessoa.jpg" alt="Profile Icon" />
+                    <img
+                      className="userProfilePic"
+                      src="pessoa.jpg"
+                      alt="Profile Icon"
+                    />
                     <strong>User Name</strong>
                     <span>Datetime</span>
                     <p>
@@ -118,20 +154,24 @@ const Feed = () => {
                   </Col>
                   <div id="postActions">
                     <Button className="actionButton">
-                      <img src={favorite} /*alt="Like/Fav"*/ />
+                      <img src={starEmpty} alt="Like/Fav" />
                     </Button>
                     <Button className="actionButton">
-                      <img src={share} /* alt="Share" */ />
+                      <img src={share} alt="Share" />
                     </Button>
                     <Button className="actionButton">
-                      <img src={comment} /* alt="Comment" */ />
+                      <img src={comment} alt="Comment" />
                     </Button>
                   </div>
                 </li>
 
                 <li className="post">
                   <Col md="12" id="userInfoPost">
-                    <img src="pessoa.jpg" alt="Profile Icon" />
+                    <img
+                      className="userProfilePic"
+                      src="pessoa.jpg"
+                      alt="Profile Icon"
+                    />
                     <strong>User Name</strong>
                     <span>Datetime</span>
                     <p>
@@ -144,13 +184,13 @@ const Feed = () => {
                   </Col>
                   <div id="postActions">
                     <Button className="actionButton">
-                      <img src={favorite} /*alt="Like/Fav"*/ />
+                      <img src={starEmpty} alt="Like/Fav" />
                     </Button>
                     <Button className="actionButton">
-                      <img src={share} /* alt="Share" */ />
+                      <img src={share} alt="Share" />
                     </Button>
                     <Button className="actionButton">
-                      <img src={comment} /* alt="Comment" */ />
+                      <img src={comment} alt="Comment" />
                     </Button>
                   </div>
                 </li>

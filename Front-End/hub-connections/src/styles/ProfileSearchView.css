@@ -2,3 +2,14 @@
   display: flex;
   justify-content: center;
 }
+
+.btnModalFooter button {
+  background: black;
+}
+
+.modal-header button {
+  border: none;
+  background: none;
+  color: black;
+  font-size: 30px;
+}

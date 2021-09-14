@@ -5,8 +5,15 @@
   background: #202020;
 }
 
+#linkLogo {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 #logoHeader {
-  width: 150px;
+  width: 100px;
   height: 100%;
 }
 
@@ -35,4 +42,13 @@ div.searchBar {
 #dropdownIcon {
   background: none;
   border: none;
+}
+
+#linkDropPerfil {
+  text-decoration: none;
+  color: black;
+}
+
+.fillLink {
+  width: 100%;
 }

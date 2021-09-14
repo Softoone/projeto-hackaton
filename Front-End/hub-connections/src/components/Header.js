@@ -14,6 +14,7 @@ import iconUser from "../assets/account_circle_white_24dp.svg";
 import searchIcon from "../assets/search_white_24dp.svg";
 import { getUserById } from "../services/apiService";
 import ProfileSearchView from "./ProfileSearchView";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -39,7 +40,9 @@ const Header = () => {
 
   return (
     <Navbar id="navHeader">
-      <img id="logoHeader" src={logo} alt="Hub Connection Logo" />
+      <Link id="linkLogo" to="/feed">
+        <img id="logoHeader" src={logo} alt="Hub Connection Logo" />
+      </Link>
       {/* <DropdownItem header>   <div>
       <Breadcrumb tag="nav" listTag="div">
         <BreadcrumbItem tag="a" href="#">Home</BreadcrumbItem>
@@ -72,7 +75,14 @@ const Header = () => {
             <img id="iconUser" src={iconUser} alt="User account icon" />
           </DropdownToggle>
           <DropdownMenu>
-            <DropdownItem>Perfil</DropdownItem>
+            <DropdownItem>
+              <div className="fillLink">
+                <Link to="/perfil" id="linkDropPerfil">
+                  Perfil
+                </Link>
+              </div>
+            </DropdownItem>
+
             <DropdownItem>Theme</DropdownItem>
             <DropdownItem divider />
             <DropdownItem>Logout</DropdownItem>

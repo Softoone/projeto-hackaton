@@ -13,6 +13,11 @@ section {
   max-width: 900px;
 }
 
+.userProfilePic {
+  width: 35px;
+  height: 35px;
+}
+
 /* Making posts stylish */
 
 #newPost {
@@ -109,4 +114,9 @@ li {
   margin-right: 10px;
   outline: none;
   border: 0;
+  background: none;
+}
+
+#postActions .actionButton img {
+  width: 30px;
 }

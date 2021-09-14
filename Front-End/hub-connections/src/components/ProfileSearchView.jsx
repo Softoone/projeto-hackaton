@@ -44,12 +44,9 @@ const ProfileSearchView = (props) => {
           </Table>
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={props.toggle}>
-            Do Something
-          </Button>
-          <Button color="secondary" onClick={props.toggle}>
-            Cancel
-          </Button>
+          <div className="btnModalFooter">
+            <Button onClick={props.toggle}>Done</Button>
+          </div>
         </ModalFooter>
       </Modal>
     </div>
