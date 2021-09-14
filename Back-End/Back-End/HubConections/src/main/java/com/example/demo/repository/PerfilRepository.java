@@ -9,5 +9,5 @@ import com.example.demo.model.Perfil;
 
 public interface PerfilRepository extends JpaRepository<Perfil, Integer>{
 	@Query("SELECT per FROM perfil per WHERE per.apelidoPerfil = ?1")
-	public List<Perfil> buscarPorNome(String apelidoPerfil);
+	public List<Perfil> findByName(String apelidoPerfil);
 }

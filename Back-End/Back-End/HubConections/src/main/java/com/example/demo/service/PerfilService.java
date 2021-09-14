@@ -34,9 +34,9 @@ public class PerfilService {
 		perfRepository.save(perfil);
 	}
 	
-	public ArrayList<Perfil> buscarPorNome(String apelidoPerfil) {
+	public ArrayList<Perfil> findByName(String apelidoPerfil) {
 		
-		return (ArrayList<Perfil>) perfRepository.buscarPorNome(apelidoPerfil);
+		return (ArrayList<Perfil>) perfRepository.findByName(apelidoPerfil);
 	}
 	
 }

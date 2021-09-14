@@ -35,12 +35,12 @@ public class PerfilControllerV1 {
 		return perfService.findAll();
 	}
 
-	@GetMapping("/name")
-	public ResponseEntity<ArrayList<Perfil>> buscarPorNome(@RequestParam("nome") String apelidoPerfil) {
+	@GetMapping("/{apelidoPerfil}")
+	public ResponseEntity<ArrayList<Perfil>> buscarPorNome(@PathVariable String apelidoPerfil) {
 		
-		ArrayList<Perfil> PerfilRetorno = perfService.buscarPorNome(apelidoPerfil);
+		ArrayList<Perfil> perfilRetorno = perfService.findByName(apelidoPerfil);
 		
-		return new ResponseEntity(PerfilRetorno,HttpStatus.OK);
+		return new ResponseEntity(perfilRetorno,HttpStatus.OK);
 	}
 	
 	@DeleteMapping("/{idPerfil}")
