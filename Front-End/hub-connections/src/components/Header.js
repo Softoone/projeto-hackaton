@@ -10,15 +10,27 @@ import {
 import { useState } from "react";
 import logo from "../assets/logoHC_edited.png";
 import "../styles/Header.css";
-import iconUser from "../assets/account_circle_black_24dp.svg";
-import searchIcon from "../assets/search_black_24dp.svg";
+import iconUser from "../assets/account_circle_white_24dp.svg";
+import searchIcon from "../assets/search_white_24dp.svg";
+import { getUserById } from "../services/apiService";
 
 const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [profiles, setProfiles] = useState([]);
+  const [searchProfiles, setSearchProfiles] = useState("");
 
   const toggle = () => {
     setDropdownOpen((prevState) => !prevState);
   };
+
+  const getConnectionsByName = () => {
+    getUserById("1").then((res) => {
+      console.log(res);
+      setProfiles(res.data);
+    });
+  };
+
+  const searchForConnections = () => {};
 
   return (
     <Navbar id="navHeader">
@@ -26,9 +38,12 @@ const Header = () => {
       <div className="searchBar">
         <Input
           id="searchInput"
+          type="text"
           placeholder="Looking for new connections?"
-        ></Input>
-        <Button id="searchButton">
+          defaultValue={searchProfiles}
+          onChange={searchForConnections}
+        />
+        <Button id="searchButton" onClick={getConnectionsByName}>
           <img id="searchIcon" src={searchIcon} alt="Search icon" />
         </Button>
       </div>

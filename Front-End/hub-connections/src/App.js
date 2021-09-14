@@ -8,7 +8,7 @@ import { Switch } from "react-router-dom";
 function App() {
   return (
     <Switch>
-      <Login path="/"></Login>
+      <Login path="/" exact></Login>
       <Feed path="/feed"></Feed>
       <Perfil path="/perfil"></Perfil>
     </Switch>

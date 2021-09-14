@@ -20,8 +20,8 @@ export const getUserByUsersName = (username) => {
   return http?.get(`/usuario?username=${username}`);
 };
 
-export const filter = (id) => {
+/* export const filter = (name) => {
   if (name === "") return Users;
   var filtrado = Users.filter((obj) => obj.name.includes(name));
   return filtrado;
-};
+}; */
