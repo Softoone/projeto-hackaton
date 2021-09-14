@@ -57,11 +57,14 @@ const Feed = () => {
                   id="textPost"
                   rows="3"
                 ></textarea>
+
+                
+
                 <div id="btnPost">
                   <Button type="submit" className="btnSubmitPost">
                     Post
                   </Button>
-                </div>
+                </div> 
               </Form>
             </Col>
           </Row>

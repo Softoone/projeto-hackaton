@@ -1,6 +1,7 @@
 /* Structure stylish */
 .postsFeed {
-  background: #fbfbfb;
+  background:#ABB2EB;
+
 }
 
 section {
@@ -21,12 +22,11 @@ section {
 /* Making posts stylish */
 
 #newPost {
-  width: 100%;
-  height: 240px;
-
+  width: 80%;
+  height: 250px;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 2);
+  /*box-shadow: 0 1px 10px rgba(0, 0, 0, 2);*/
 }
 
 #userInfoPost {
@@ -56,9 +56,15 @@ section {
 #btnPost button {
   padding: 8px 40px;
   cursor: pointer;
-  border-radius: 100px;
+  border-radius: 20px;
+  border: 2px solid #4DEB6D ;
   color: #fff;
-  background: blue;
+  background:#4DEB6D;
+  
+  p::before {
+
+  }
+
 }
 
 /* Posts list stylish */
