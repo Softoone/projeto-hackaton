@@ -4,6 +4,10 @@ section {
 }
 
 /* Card Profile */
+#seila{
+  width: 105%;
+  color: #be9595;
+}
 .userInfoCard {
   border: solid 2px;
   height: 300px;
@@ -13,9 +17,9 @@ section {
 
 #banner {
   border: solid 2px;
-  height: 120px;
+  height: 150px;
   width: 100%;
-  background: rgb(161, 175, 147);
+  /* background: rgb(91, 99, 84); */
 }
 
 div.photoDescription img {
@@ -25,7 +29,8 @@ div.photoDescription img {
   position: relative;
   z-index: 10;
   top: -50px;
-  left: 50px;
+  left: 260px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 2);
 }
 
 .description {
@@ -35,7 +40,7 @@ div.photoDescription img {
   max-height: 150px;
   position: relative;
   float: right;
-  margin: 20px;
+  margin-bottom: 100px;
 }
 
 /* Profile Portfolio */
@@ -45,7 +50,7 @@ div.photoDescription img {
 }
 
 .portfolioTitle h2 {
-  margin: 10px 20px;
+  margin: 10px 390px;
 }
 
 .portfolioFiles {

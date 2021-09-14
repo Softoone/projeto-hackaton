@@ -3,6 +3,7 @@ import "../styles/Perfil.css";
 import Footer from "./Footer";
 import Header from "./Header";
 import photo from "../assets/profile_photo.jpg";
+import nem from "../assets/adwaita.jpg";
 import plusIcon from "../assets/add_circle_black_48dp.svg";
 import { useForm } from "react-hook-form";
 
@@ -17,10 +18,12 @@ const Perfil = () => {
     <div>
       <Header></Header>
       <section className="userInfo">
+      <div ><img id="banner" src={nem} /></div>
+
         <Container fluid={true}>
+          <div id="seila">
           <Row className="userInfoCard">
             <Col md="9">
-              <div id="banner">Banner</div>
               <div className="photoDescription">
                 <img src={photo} alt="Icone de Perfil do Usuário" />
                 <div className="description" type="description">
@@ -32,6 +35,7 @@ const Perfil = () => {
               </div>
             </Col>
           </Row>
+          </div>
         </Container>
       </section>
 
