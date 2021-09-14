@@ -12,6 +12,7 @@ section {
   border: solid 2px;
   height: 300px;
   align-items: center;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 2);
   justify-content: center;
 }
 
@@ -19,6 +20,7 @@ section {
   border: solid 2px;
   height: 150px;
   width: 100%;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 2);
   /* background: rgb(91, 99, 84); */
 }
 
@@ -34,7 +36,7 @@ div.photoDescription img {
 }
 
 .description {
-  border: solid 2px;
+  /* border: solid 2px; */
   width: 80%;
   height: auto;
   max-height: 150px;
@@ -56,8 +58,8 @@ div.photoDescription img {
 .portfolioFiles {
   height: 290px;
   max-height: 220px;
-  width: 100%;
-  padding: 30px 25px;
+  /* width: 100%; */
+  padding: 30px 0px;
 
   display: grid;
   grid-template-columns: 250px 250px 250px 250px;
@@ -71,6 +73,7 @@ div.photoDescription img {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 2);
   display: flex;
   align-items: center;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 2);
   justify-content: center;
 }
 
@@ -85,6 +88,8 @@ div.photoDescription img {
 
 .featuredPosts {
   border: solid 2px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 2);
+
   height: 300px;
   margin-bottom: 30px;
 }

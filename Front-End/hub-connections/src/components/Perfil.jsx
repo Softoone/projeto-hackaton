@@ -41,13 +41,13 @@ const Perfil = () => {
 
       <section>
         <Container>
-          <div className="portfolio">
+          <div >
             <Col md="12" className="portfolioTitle">
-              <h2>PortFolio</h2>
+              <h2>Portfólio</h2>
             </Col>
             <div className="portfolioFiles">
               <div className="fileUpload">
-                <input type="file" {...register("fileUp")} />
+                {/* <input type="file" {...register("fileUp")} /> */}
                 <Form>
                   <Button id="addFiles">
                     <img
