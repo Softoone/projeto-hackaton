@@ -4,6 +4,10 @@ export const getUsers = () => {
   return http?.get(`/v1/usuario`);
 };
 
+export const getProfiles = () => {
+  return http.get("/v1/perfil");
+};
+
 export const getUserById = (userId) => {
   return http?.get(`/v1/usuario/${userId}`);
 };

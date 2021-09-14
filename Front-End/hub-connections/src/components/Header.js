@@ -13,6 +13,7 @@ import "../styles/Header.css";
 import iconUser from "../assets/account_circle_white_24dp.svg";
 import searchIcon from "../assets/search_white_24dp.svg";
 import { getUserById } from "../services/apiService";
+import ProfileSearchView from "./ProfileSearchView";
 
 const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -28,6 +29,8 @@ const Header = () => {
       console.log(res);
       setProfiles(res.data);
     });
+
+    return <ProfileSearchView></ProfileSearchView>;
   };
 
   const searchForConnections = () => {};
