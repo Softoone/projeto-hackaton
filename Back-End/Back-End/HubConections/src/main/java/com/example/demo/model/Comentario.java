@@ -1,6 +1,6 @@
 package com.example.demo.model;
 
-import java.io.Serializable;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,37 +8,35 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.Lob;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-@Entity(name="perfil")
-public class Perfil implements Serializable{
+@Entity(name="comentario")
+public class Comentario {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 7261039175618827952L;
-
-	@Id 
+	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="id_perfil")
-	private Integer idPerfil;
+	@Column(name="id_comentario")
+	private Integer idcomentario;
 	
-	@Column(name="apelido")
-	private String apelidoPerfil;
+	@Column(name="data_")
+	Date data = new Date();
 	
+	@Column(name="texto")
+	private String texto;
 	
-	@Column(name="img")
-	@Lob
-	private Byte[] img_perfil;
+	@ManyToOne
+	@JoinColumn(name="id_publicacao")
+	@JsonIgnore
+	private Publicacao publi;
 }

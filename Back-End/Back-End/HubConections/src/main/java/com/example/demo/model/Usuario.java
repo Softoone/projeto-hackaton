@@ -1,5 +1,7 @@
 package com.example.demo.model;
 
+
+
 import java.io.Serializable;
 import java.math.BigInteger;
 import java.util.Date;
@@ -9,6 +11,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -49,5 +53,11 @@ public class Usuario implements Serializable{
 	
 	@Column(name="cep")
 	private Integer cepUsuario;
-			
+	
+	@OneToOne
+	@JoinColumn(name = "id_usuario")
+	private Perfil perfil;
+		
 }
+
+

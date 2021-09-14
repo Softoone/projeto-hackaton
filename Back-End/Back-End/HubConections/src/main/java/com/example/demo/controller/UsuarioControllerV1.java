@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,19 +18,32 @@ import com.example.demo.model.Usuario;
 import com.example.demo.service.UsuarioService;
 
 @RestController
-@RequestMapping
+@RequestMapping("/v1/usuario")
 public class UsuarioControllerV1 {
 	@Autowired
 	UsuarioService usuarioService;
 	
-	@PostMapping("/adicionar")
+	@PostMapping
 	public void adicionar(@RequestBody Usuario usuario) {
 		usuarioService.save(usuario);
 	}
 	
-	@GetMapping("/buscar")
-	public ArrayList<Usuario> findAllEnterprise(){
+	@GetMapping
+	public ArrayList<Usuario> findAll(){
 		return usuarioService.findAll();
+	}
+	
+//	@GetMapping("/{idUsuario}")
+//	public void buscarUsuarioId(@PathVariable Integer idUsuario) {
+//		usuarioService.buscarUsuarioId(idUsuario);
+//	}
+	
+	@GetMapping("/{idUsuario}")
+	public ResponseEntity<Usuario> buscarPorId(@PathVariable Integer idUsuario) {
+		
+		Usuario usuarioRetorno = usuarioService.buscarUsuarioId(idUsuario);
+		
+		return new ResponseEntity(usuarioRetorno,HttpStatus.OK);
 	}
 	
 	@DeleteMapping("/{idUsuario}")
@@ -37,7 +51,7 @@ public class UsuarioControllerV1 {
 		usuarioService.delete(idUsuario);
 	}
 	
-	@PutMapping("/editar")
+	@PutMapping
 	public ResponseEntity atualizar(@RequestBody Usuario usuario) {
 		usuarioService.update(usuario);
 		return ResponseEntity.ok().build();

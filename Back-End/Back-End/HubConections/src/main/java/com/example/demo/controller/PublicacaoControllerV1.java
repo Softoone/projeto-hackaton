@@ -13,35 +13,34 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.model.Perfil;
-import com.example.demo.model.Usuario;
-import com.example.demo.service.PerfilService;
+import com.example.demo.model.Publicacao;
+import com.example.demo.service.PublicacaoService;
 
 @RestController
-@RequestMapping("/v1/perfil")
-public class PerfilControllerV1 {
-
+@RequestMapping("/v1/publicacao")
+public class PublicacaoControllerV1 {
+	
 	@Autowired
-	PerfilService perfService;
+	PublicacaoService publiService;
 	
 	@PostMapping
-	public void adicionar(@RequestBody Perfil perfil) {
-		perfService.save(perfil);
+	public void adicionar(@RequestBody Publicacao publicacao) {
+		publiService.save(publicacao);
 	}
 	
 	@GetMapping
-	public ArrayList<Perfil> findAll(){
-		return perfService.findAll();
+	public ArrayList<Publicacao> findAll(){
+		return publiService.findAll();
 	}
 	
-	@DeleteMapping("/{idPerfil}")
-	public void deletar(@PathVariable Integer idPerfil) {
-		perfService.delete(idPerfil);
+	@DeleteMapping("/{idPublicacao}")
+	public void deletar(@PathVariable Integer idPublicacao) {
+		publiService.delete(idPublicacao);
 	}
 	
 	@PutMapping
-	public ResponseEntity atualizar(@RequestBody Perfil perfil) {
-		perfService.update(perfil);
+	public ResponseEntity atualizar(@RequestBody Publicacao publicacao) {
+		publiService.update(publicacao);
 		return ResponseEntity.ok().build();
 	}
 }

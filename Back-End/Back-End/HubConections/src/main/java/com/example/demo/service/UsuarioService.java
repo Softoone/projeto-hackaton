@@ -33,4 +33,8 @@ public class UsuarioService {
 	public void update(Usuario usuario) {
 		usuarioRepository.save(usuario);
 	}
+	
+	public Usuario buscarUsuarioId(Integer idUsuario) {
+		return usuarioRepository.findById(idUsuario).get();
+	}
 }
